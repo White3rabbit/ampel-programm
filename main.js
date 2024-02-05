@@ -12,3 +12,5 @@ console.log(speed);
 console.log(isFacing);
 
 } 
+
+// 6:43 min  im video
