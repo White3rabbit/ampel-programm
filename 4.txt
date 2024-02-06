@@ -1,0 +1,28 @@
+// Loops
+function main(){
+
+    var cars = [
+        {
+            "brand": "Mercedes",
+            "age": 10
+        },
+        {
+            "brand": "BMW",
+            "age": 8
+        },
+        {
+            "brand": "VW",
+            "age": 6
+        }
+    ]
+
+for (let car of cars){
+
+if (car.brand == "BMW"){
+    console.log(car)
+} else {
+    console.log("Kein BMW")
+}
+}
+
+}

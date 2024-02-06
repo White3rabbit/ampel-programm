@@ -1,0 +1,48 @@
+function main() {
+    var inputSpeed = document.getElementById("speed");
+    var inputDir = document.getElementById("dir");
+    var inputMaxSpeed = document.getElementById("maxSpeed");
+
+
+    var speed = parseInt(inputSpeed.value);
+    var maxSpeed = parseInt(inputMaxSpeed.value);
+    var isFacing = inputDir.checked;  
+
+    var maxSpeedWithOffset = maxSpeed + ((maxSpeed / 100) * 10);
+    console.log(maxSpeedWithOffset);
+
+if(speed > maxSpeedWithOffset && isFacing == true) {
+    alert("Sie wurden geblitzt");
+}
+
+}
+
+
+
+
+
+
+    <header>
+
+    </header>
+    <main>
+        <h1>Blitzer</h1>
+        <div style="margin-bottom: 10px;">
+            <label">Max. Geschwindigkeit</label>
+            <input id= "maxSpeed" type="number" placeholder="Max. km/h" style="text-align: center;">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label>Geschwindigkeit</label>
+            <input id="speed" type="number" placeholder="km/h gefahren" style="text-align: center;">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="dir">Fährt richtung Blitzer</label>
+            <input id="dir" type="checkbox">
+        </div>
+        <div>
+            <button onclick="main()">Überprüfen</button>
+        </div>
+    </main>
+    <footer>
+        <p>© 2023 &#42928;&#75; | </p>
+    </footer>

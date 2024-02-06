@@ -1,0 +1,15 @@
+// Loops
+function main(){
+
+//do while 
+
+var counter = 0;
+
+do{
+    console.log(counter);
+    counter++; //stopt den enlos loop
+}while(counter < 100)
+
+}
+// do loops werden gebraucht um mindestens einmal etwas auszufuehren.
+// z.B. bei einer Passwort anfrage, die dann wiederholt werden soll.

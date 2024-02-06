@@ -1,0 +1,27 @@
+
+//Switch statements
+function main() {
+
+    var product = "Schokolade";
+
+    switch (product) {
+
+        case "Mehl":
+            console.log("Mehl kostet 1 Fr.")
+            break;
+        case "Milch":
+            console.log("Milch kostet 2 Fr.")
+            break;
+        case "Schokolade":
+            console.log("Schokolade kostet 3 Fr.")
+            break;
+        case "Apfel":
+        case "Birne":
+            console.log("Früchte kosten 1 Fr.")
+            break;
+        default:
+            console.log("Kein Preis für dein Produkt gefunden")
+    }
+
+
+}

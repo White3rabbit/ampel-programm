@@ -22,3 +22,7 @@ for (let i = 1; i <= weeks; i++) {
 }
 
 }
+
+// buchstaben werden wie folgt weitergeführt:
+
+i, j, k, l, m, n, o, p,.. usw.
