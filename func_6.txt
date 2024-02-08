@@ -1,0 +1,9 @@
+// Functions
+
+const minHeight = 120;
+
+console.log(minHeight);
+
+minHeight = 10;
+
+//const = constante werte die festgelegt sind können somit nicht verändert werden.

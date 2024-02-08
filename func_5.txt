@@ -1,0 +1,18 @@
+// Functions
+
+var global = "Roman";
+
+function log() {
+
+    var localFuncVar = "Peter";
+    var x = 101;
+    if (x > 100){
+        console.log(global);
+        
+}
+console.log(localFuncVar);
+}
+
+function test() {
+    console.log(localFuncVar);
+}

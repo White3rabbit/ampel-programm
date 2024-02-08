@@ -1,0 +1,53 @@
+// Loops
+
+var numbers = [
+    7,
+    48,
+    23,
+    9,
+    45,
+    67,
+    99,
+    1,
+    20,
+    77,
+    94
+]
+
+var numbersTwo = [
+    7,
+    48,
+    23,
+    9,
+    45,
+    67,
+    99,
+    1,
+    20,
+    77,
+    94
+]
+
+function main() {
+
+var result = filter(numbers, 50);
+console.log(result);
+}
+
+result = filter(numbersTwo, 75);
+console.log(result);
+
+
+function filter(arrayToFilter, highestNumberAllowed) {
+
+    var filteredNumbers = [];
+    for (let i = 0; i < numbers.length; i++) {
+       
+        if (arrayToFilter[i] <= highestNumberAllowed) {
+            filteredNumbers.push(arrayToFilter[i]);
+        }   
+        
+    }
+
+    return filteredNumbers;
+}

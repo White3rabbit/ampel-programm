@@ -1,0 +1,13 @@
+// Loops
+
+
+function main(){
+    add()
+    add(5)
+    add(10,5)
+}
+
+function add(x = 1,y = 2){
+var result = x+y;
+    console.log(result)
+}

@@ -1,0 +1,22 @@
+// Loops
+
+
+function main() {
+
+    add(3)
+
+}
+
+function add(x, y) {
+
+    console.log(x);
+    console.log(y);
+
+
+    var result = x + y;
+    console.log(result)
+    return result;
+}
+
+//NaN = Not a Number
+//undifined = nicht definiert

@@ -1,38 +1,40 @@
-// Loops
+
+
+
 function main(){
 
-//nested loops
-
-var numbers = [
-    100,
-    350,
-    250,
-    375,
-    1000,
-    750,
-    650,
-    3000,
-    1050,
-    500
+}
+var nc = "Nscore";
+var name = "Name";
+var students = [
+    {
+        "Name": "Max",
+        "Matrikelnummer": 11,
+        "Nscore": 4
+    },
+    {
+        "Name": "Peter",
+        "Matrikelnummer": 22,
+        "Nscore": 5
+    },
+    {
+        "Name": "Stefan",
+        "Matrikelnummer": 33,
+        "Nscore": 5.5
+        },
+    {
+        "Name": "Thomas",
+        "Matrikelnummer": 44,
+        "Nscore": 4.5
+    },
+    {
+        "Name": "Lukas",
+        "Matrikelnummer": 55,
+        "Nscore": 6
+    }, 
 ]
 
-for (let i = 0; i < numbers.length; i++) {
-    if(numbers[i] >= 1000){
-        break;
-    }
+for (let nc = 0; nc < array.length; ++nc) {
+    console.log(array[nc]); 
     
-
-
-
-    console.log(numbers[i]);
-
 }
-}
-
-//for (let i = 0; i < numbers.length; i++) {
-  //  if(numbers[i] >= 1000){
-    //    continue;
-    //}
-    
-
-    // break und continue können auch zusammen benutzt werden.
