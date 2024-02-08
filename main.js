@@ -38,3 +38,5 @@ for (let nc = 0; nc < array.length; ++nc) {
     console.log(array[nc]); 
     
 }
+
+//time 3:34 video nc1
