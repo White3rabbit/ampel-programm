@@ -1,42 +1,66 @@
 
+// Notendurschnitt berechnen mit einem Array
 
 
-function main(){
-
-}
-var nc = "Nscore";
-var name = "Name";
+//Array
 var students = [
     {
         "Name": "Max",
         "Matrikelnummer": 11,
-        "Nscore": 4
+        "NC": 4
     },
     {
         "Name": "Peter",
         "Matrikelnummer": 22,
-        "Nscore": 5
+        "NC": 5
     },
     {
         "Name": "Stefan",
         "Matrikelnummer": 33,
-        "Nscore": 5.5
-        },
+        "NC": 5.5
+    },
     {
         "Name": "Thomas",
         "Matrikelnummer": 44,
-        "Nscore": 4.5
+        "NC": 4.5
     },
     {
         "Name": "Lukas",
         "Matrikelnummer": 55,
-        "Nscore": 6
-    }, 
+        "NC": 6
+    },
 ]
 
-for (let nc = 0; nc < array.length; ++nc) {
-    console.log(array[nc]); 
-    
+//Funktion Main
+function main() {
+    calcAverageNC();
 }
 
-//time 3:34 video nc1
+//Funktion Kalkulieren
+function calcAverageNC() {
+
+
+    //Variable innerhalb der Funktion
+    var totalNC = 0;
+
+    for (let i = 0; i < students.length; i++) {
+
+        //variable innerhalb der Schleife
+        var student = students[i];
+
+        //Ausgabe
+        console.log(student["Name"] + " hat einen NC von: " + student["NC"] + " und seine Martrikelnummer ist: " + student["Matrikelnummer"]);
+
+        //zusammenrechnen der Note
+        totalNC += student.NC
+    }
+
+    //durchschnittliche Note berechnen
+    var averageNC = totalNC / students.length;
+
+    //Ausgabe
+    console.log("Die durchschnittliche Note ist: " + averageNC);
+}
+
+
+

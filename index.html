@@ -9,12 +9,41 @@
     <meta name="keywords" content="Tags für google suche">
     <title>Kino Kasse</title>
 </head>
+<style>
+    input {
+        text-align: center;
+        border-radius: 10px;
+        width: 200px;
+        height: 30px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    button {
+        text-align: center;
+        border-radius: 10px;
+        width: 150px;
+        height: 30px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+</style>
 
 <body>
     <div>
         <button onclick="main()">Überprüfen</button>
     </div>
-
+    <div>
+       <input id="name" placeholder="Name des Studenten" type="text">
+    </div>
+    <div>
+        <input id="name" placeholder="Matrikelnummer" type="text">
+    </div>
+    <div>
+        <input id="name" placeholder="Note" type="text">
+    </div>
+    <div>
+        <button onclick="add()">Hinzufügen</button>
+    </div>
 </body>
 <script src="/main.js" type="text/javascript"></script>
 
