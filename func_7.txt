@@ -1,0 +1,58 @@
+
+// Notendurschnitt berechnen mit einem Array
+
+
+//Array
+var students = [
+   
+]
+
+//Funktion Main
+function main() {
+    calcAverageNC();
+}
+
+//Funktion Kalkulieren
+function calcAverageNC() {
+
+
+    //Variable innerhalb der Funktion
+    var totalNC = 0;
+
+    for (let i = 0; i < students.length; i++) {
+
+        //variable innerhalb der Schleife
+        var student = students[i];
+
+        //Ausgabe
+        console.log(student["Name"] + " hat einen NC von: " + student["NC"] + " und seine Martrikelnummer ist: " + student["Matrikelnummer"]);
+
+        //zusammenrechnen der Note
+        totalNC += student.NC
+    }
+
+    //durchschnittliche Note berechnen
+    var averageNC = totalNC / students.length;
+
+    //Ausgabe
+    console.log("Die durchschnittliche Note ist: " + averageNC);
+}
+
+function addStudent(){
+    
+    var name = document.getElementById('inputName').value;
+    var id = parseInt(document.getElementById('inputId').value);
+    var nc = parseFloat(document.getElementById('inputNC').value);
+    
+    var student = {
+        "Name": name,
+        "Matrikelnummer": id,
+        "NC": nc
+    };
+
+    students.push(student);
+    console.log(students);
+
+}
+
+//debugger sind gute werkzeuge

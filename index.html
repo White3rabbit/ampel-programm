@@ -29,20 +29,24 @@
 </style>
 
 <body>
+   
+    <div>
+        <label for="">Name</label>
+       <input id="inputName" placeholder="Name des Studenten" type="text">
+    </div>
+    <div>
+        <label for="">Matrikelnummer</label>
+        <input id="inputId" placeholder="Matrikelnummer" type="number">
+    </div>
+    <div>
+        <label for="">NC</label>
+        <input id="inputNC" step="0.1" placeholder="Note" type="number">
+    </div>
+    <div>
+        <button onclick="addStudent()">Hinzufügen</button>
+    </div>
     <div>
         <button onclick="main()">Überprüfen</button>
-    </div>
-    <div>
-       <input id="name" placeholder="Name des Studenten" type="text">
-    </div>
-    <div>
-        <input id="name" placeholder="Matrikelnummer" type="text">
-    </div>
-    <div>
-        <input id="name" placeholder="Note" type="text">
-    </div>
-    <div>
-        <button onclick="add()">Hinzufügen</button>
     </div>
 </body>
 <script src="/main.js" type="text/javascript"></script>
