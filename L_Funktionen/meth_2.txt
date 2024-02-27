@@ -1,0 +1,44 @@
+//Methoden
+function main(){
+ 
+    var student = {
+        "Marke": "VW",
+        "Baujahr": 2010,
+        "PS": 200,
+    };
+
+  
+}
+
+class Car {
+
+    constructor(marke, baujahr, ps){
+        this.marke = marke;
+        this.baujahr = baujahr;
+        this.ps = ps;
+    }
+
+    drive(speed){
+        console.log("Fährt: " + this.marke + " " + speed);
+    }
+
+    honk(){
+        console.log("Hupt: " + JSON.stringify(this));
+    }
+
+    break(){
+        console.log("Bremst: " + JSON.stringify(this));
+    }
+}
+
+var car = new Car("VW", 2010, 200);
+car.drive(100);
+
+var car2 = new Car("Mercedes", 2015, 300);
+car2.drive(210);
+car2.honk();
+
+var car3 = new Car("BMW", 2020, 400);
+car3.drive(320);
+car3.honk();
+car3.break();

@@ -1,25 +1,10 @@
-//Klassen
-function main(){
- 
-    var student = {
-        "Name": "Homer",
-        "Matrikelnummer": 1,
-        "NC": 4
-    };
+import {Car} from "./car.js";
 
-  
-}
 
-class Student {
+var car = new Car("VW", 2010, 200);
+car.drive(100);
 
-    constructor(name, id, nc){
-        this.name = name;
-        this.id = id;
-        this.nc = nc;
-    }
+var car2 = new Car("Mercedes", 2015, 300);
+car2.drive(210);
+car2.honk();
 
-}
-
-var student = new Student("Homer", 1, 2);
-var student2 = new Student("Lisa", 2, 6);
-var student3 = new Student("Bart", 1, 3);
